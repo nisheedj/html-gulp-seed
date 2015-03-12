@@ -3,4 +3,22 @@ extends ../components/html-doc.jade
 
 block title
   title Home Page
-  meta(name="description" content="Home Page") 
+  meta(name="description" content="Home Page")
+
+block bodyContent
+  div.container
+        div.jumbotron
+          h1 HTML Gulp Seed!
+          p.
+            This is a Seed project to get started with jade templates for rapid HTML
+            prototyping
+
+//-As you can see order does not matter
+block bodyHeader
+  div.container
+    div(class="alert alert-info" role="alert")
+      strong.
+        In Jade
+      span.
+        The order in which the blocks are defined is not super important.
+

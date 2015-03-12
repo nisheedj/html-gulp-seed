@@ -1,6 +1,12 @@
 //- html-styles.jade
+
 // Default page styles for all pages.
-link(rel="stylesheet" type="text/css" href="css/bootstrap.min.css")
-link(rel="stylesheet" type="text/css" href="css/styles.min.css")
+if environment == 'production'
+  link(rel="stylesheet" type="text/css" href="css/bootstrap.min.css")
+  link(rel="stylesheet" type="text/css" href="css/styles.min.css")
+else
+  link(rel="stylesheet" type="text/css" href="css/bootstrap.css")
+  link(rel="stylesheet" type="text/css" href="css/styles.css")
+
 // Custom page styles go here.
 block pagestyles

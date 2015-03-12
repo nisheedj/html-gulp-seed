@@ -36,3 +36,10 @@ sandbox
 test/out-fixtures/*
 test/watch-*.txt
 gulp.1
+
+#Seed ignores
+client/css
+client/js/vendor
+client/less/bootstrap
+client/fonts/bootstrap
+client/pages/*.html

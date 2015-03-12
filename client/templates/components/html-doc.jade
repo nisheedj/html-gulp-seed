@@ -8,7 +8,11 @@ html(lang="en" class='no-js')
     // <![endif]
     include ./html-head.jade  
     body
+        //- Body content top
         block bodyHeader
+        //- Body content main
         block bodyContent
+        //- Body content bottom
         block bodyFooter
+        //Common script files
         include ./html-scripts.jade

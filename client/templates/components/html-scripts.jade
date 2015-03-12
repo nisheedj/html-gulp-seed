@@ -1,5 +1,11 @@
 //- html-scripts.jade
-script(type="text/javascript" src="js/vendor/jquery.js")
+if environment == 'production'
+  script(type="text/javascript" src="js/vendor/jquery.min.js")
+  script(type="text/javascript" src="js/vendor/bootstrap.min.js")
+else
+  script(type="text/javascript" src="js/vendor/jquery.js")
+  script(type="text/javascript" src="js/vendor/bootstrap.js")
+
 // Page specific scripts go here.
 block scriptTags
 // Page specific scripts blocks go here.
